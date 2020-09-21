@@ -1,0 +1,27 @@
+.gallery {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 25px;
+}
+
+#search {
+  display: flex;
+  max-width: 500px;
+  width: 60%;
+  border: 2px solid lightgray;
+  font-size: 16px;
+  height: auto;
+  margin: 20px auto;
+  outline: 0;
+  padding: 15px;
+  color: gray;
+  border-radius: 5px;
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
